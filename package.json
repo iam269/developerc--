@@ -2,6 +2,8 @@
   "name": "@figma/my-make-file",
   "private": true,
   "version": "0.0.1",
+  "description": "A comprehensive resource for learning C++ programming, covering algorithms, concepts, history, and industry applications",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "build": "vite build",
