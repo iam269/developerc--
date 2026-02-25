@@ -5,44 +5,44 @@ import { Box, Layers, Zap, Database, ArrowRight, Repeat, Hash, Brackets, List, C
 
 const concepts = [
   {
-    title: 'Variabile și Tipuri de Date',
-    description: 'C++ oferă tipuri de date primitive (int, float, double, char, bool) și posibilitatea de a crea tipuri personalizate.',
+    title: 'Variables & Data Types',
+    description: 'C++ provides primitive data types (int, float, double, char, bool) and the ability to create custom types.',
     icon: Hash,
-    code: `// Tipuri de date fundamentale
-int numar = 42;           // Integer
-double pret = 19.99;      // Double precision
-char litera = 'A';        // Character
-bool activ = true;        // Boolean
-std::string text = "Bine"; // String
+    code: `// Fundamental data types
+int number = 42;           // Integer
+double price = 19.99;      // Double precision
+char letter = 'A';         // Character
+bool active = true;        // Boolean
+std::string text = "Hello"; // String
 
-// Constanta
+// Constant
 const int MAX_SIZE = 100;`
   },
   {
-    title: 'Controlul Fluxului',
-    description: 'Instrucțiuni condiționale și bucle pentru controlul execuției programului.',
+    title: 'Control Flow',
+    description: 'Conditional statements and loops for controlling program execution.',
     icon: ArrowRight,
     code: `// If-else
 if (x > 10) {
-    std::cout << "Mai mare" << std::endl;
+    std::cout << "Greater" << std::endl;
 } else if (x > 5) {
-    std::cout << "Mediu" << std::endl;
+    std::cout << "Medium" << std::endl;
 } else {
-    std::cout << "Mic" << std::endl;
+    std::cout << "Small" << std::endl;
 }
 
 // Switch
-switch (optiune) {
-    case 1: std::cout << "Unu"; break;
-    case 2: std::cout << "Doi"; break;
-    default: std::cout << "Altceva";
+switch (option) {
+    case 1: std::cout << "One"; break;
+    case 2: std::cout << "Two"; break;
+    default: std::cout << "Other";
 }`
   },
   {
-    title: 'Bucle (Loops)',
-    description: 'C++ oferă mai multe tipuri de bucle: for, while, do-while pentru iterarea prin date.',
+    title: 'Loops',
+    description: 'C++ offers multiple loop types: for, while, do-while for iterating through data.',
     icon: Repeat,
-    code: `// For loop clasic
+    code: `// Classic for loop
 for (int i = 0; i < 5; i++) {
     std::cout << i << " ";
 }
@@ -54,111 +54,111 @@ for (int n : nums) {
 }
 
 // While
-while (conditie) {
-    // executa cat timp e adevarat
+while (condition) {
+    // execute while true
 }`
   },
   {
-    title: 'Funcții',
-    description: 'Unități de cod reutilizabile care pot primi parametri și pot returna valori.',
+    title: 'Functions',
+    description: 'Reusable units of code that can take parameters and return values.',
     icon: Settings,
-    code: `// Functie simpla
-int suma(int a, int b) {
+    code: `// Simple function
+int sum(int a, int b) {
     return a + b;
 }
 
-// Functie cu parametri referinta
-void modifica(int& x) {
+// Function with reference parameter
+void modify(int& x) {
     x = x * 2;
 }
 
-// Functie cu parametri default
-int produs(int a, int b = 1) {
+// Function with default parameters
+int product(int a, int b = 1) {
     return a * b;
 }`
   },
   {
-    title: 'Pointeri și Referințe',
-    description: 'Control direct asupra memoriei prin pointeri și referințe pentru eficiență maximă.',
+    title: 'Pointers & References',
+    description: 'Direct memory control through pointers and references for maximum efficiency.',
     icon: Cpu,
     code: `int var = 10;
-int* ptr = &var;  // Pointer catre adresa
+int* ptr = &var;  // Pointer to address
 
-std::cout << var;   // Valoarea: 10
-std::cout << ptr;   // Adresa: 0x...
-std::cout << *ptr;  // Dereferentiere: 10
+std::cout << var;   // Value: 10
+std::cout << ptr;   // Address: 0x...
+std::cout << *ptr;  // Dereference: 10
 
-// Referinta (alias)
+// Reference (alias)
 int& ref = var;
-ref = 20;  // var devine 20`
+ref = 20;  // var becomes 20`
   },
   {
-    title: 'Structuri și Clase',
-    description: 'Structurile sunt tipuri de date compuse, iar clasele adaugă encapsulare și funcții membre.',
+    title: 'Structs & Classes',
+    description: 'Structs are composite data types, and classes add encapsulation and member functions.',
     icon: Brackets,
-    code: `// Structura
-struct Persoana {
-    std::string nume;
-    int varsta;
+    code: `// Structure
+struct Person {
+    std::string name;
+    int age;
 };
 
-// Clasa
-class ContBancar {
+// Class
+class BankAccount {
 private:
-    double sold;
+    double balance;
 public:
-    void depune(double suma) {
-        sold += suma;
+    void deposit(double amount) {
+        balance += amount;
     }
-    double getSold() const {
-        return sold;
+    double getBalance() const {
+        return balance;
     }
 };`
   },
   {
-    title: 'Moștenire (Inheritance)',
-    description: 'Clasele pot mosteni proprietăți și metode de la alte clase, creând ierarhii.',
+    title: 'Inheritance',
+    description: 'Classes can inherit properties and methods from other classes, creating hierarchies.',
     icon: Folder,
     code: `class Animal {
 public:
-    void mananca() { }
+    void eat() { }
 };
 
-class Caine : public Animal {
+class Dog : public Animal {
 public:
-    void latra() {
-        std::cout << "Ham!" << std::endl;
+    void bark() {
+        std::cout << "Woof!" << std::endl;
     }
 };
 
-Caine c;
-c.mananca();  // Mostenit de la Animal
-c.latra();    // Propriu`
+Dog d;
+d.eat();  // Inherited from Animal
+d.bark(); // Own method`
   },
   {
-    title: 'Polimorfism',
-    description: 'Același cod poate comporta diferit în funcție de tipul obiectului.',
+    title: 'Polymorphism',
+    description: 'The same code can behave differently depending on the object type.',
     icon: List,
-    code: `class Forma {
+    code: `class Shape {
 public:
-    virtual void deseneaza() = 0; // Pur virtual
+    virtual void draw() = 0; // Pure virtual
 };
 
-class Cerc : public Forma {
-    void deseneaza() override {
-        std::cout << "Desenez cerc" << std::endl;
+class Circle : public Shape {
+    void draw() override {
+        std::cout << "Drawing circle" << std::endl;
     }
 };
 
-class Patrat : public Forma {
-    void deseneaza() override {
-        std::cout << "Desenez patrat" << std::endl;
+class Square : public Shape {
+    void draw() override {
+        std::cout << "Drawing square" << std::endl;
     }
 };`
   },
   {
-    title: 'Programare Orientată pe Obiect (OOP)',
-    description: 'C++ suportă clase, moștenire, polimorfism și încapsulare, permițând modelarea complexă a sistemelor.',
+    title: 'Object-Oriented Programming (OOP)',
+    description: 'C++ supports classes, inheritance, polymorphism and encapsulation for complex system modeling.',
     icon: Box,
     code: `class Engine {
 public:
@@ -168,12 +168,12 @@ public:
 };
 
 class Car : public Engine {
-  // Moștenire
+  // Inheritance
 };`
   },
   {
-    title: 'Programare Generică (Templates)',
-    description: 'Template-urile permit scrierea unui cod flexibil care funcționează cu orice tip de date.',
+    title: 'Generic Programming (Templates)',
+    description: 'Templates allow writing flexible code that works with any data type.',
     icon: Layers,
     code: `template <typename T>
 T add(T a, T b) {
@@ -183,7 +183,7 @@ T add(T a, T b) {
 auto result = add(5, 10);    // int
 auto res2 = add(5.5, 2.1);  // double
 
-// Template cu mai multe tipuri
+// Template with multiple types
 template <typename T, typename U>
 auto max(T a, U b) {
     return (a > b) ? a : b;
@@ -191,7 +191,7 @@ auto max(T a, U b) {
   },
   {
     title: 'STL - Standard Template Library',
-    description: 'Colecții și algoritmi preconstruiți pentru manipularea eficientă a datelor.',
+    description: 'Pre-built collections and algorithms for efficient data manipulation.',
     icon: Database,
     code: `#include <vector>
 #include <map>
@@ -200,37 +200,37 @@ auto max(T a, U b) {
 std::vector<int> vec = {5, 2, 8, 1};
 std::sort(vec.begin(), vec.end()); // 1,2,5,8
 
-std::map<std::string, int> note;
-note["Ana"] = 10;
-note["Bob"] = 9;
+std::map<std::string, int> grades;
+grades["Alice"] = 10;
+grades["Bob"] = 9;
 
-for (const auto& [n, v] : note) {
-    std::cout << n << ": " << v;
+for (const auto& [name, grade] : grades) {
+    std::cout << name << ": " << grade;
 }`
   },
   {
-    title: 'Gestionarea Excepțiilor',
-    description: 'Mecanism robust pentru gestionarea erorilor și situațiilor neprevăzute.',
+    title: 'Exception Handling',
+    description: 'Robust mechanism for handling errors and unexpected situations.',
     icon: Shield,
     code: `try {
-    int rezultat = imparte(a, b);
-    std::cout << rezultat;
+    int result = divide(a, b);
+    std::cout << result;
 } catch (const std::exception& e) {
-    std::cerr << "Eroare: " << e.what();
+    std::cerr << "Error: " << e.what();
 } catch (...) {
-    std::cerr << "Eroare necunoscuta";
+    std::cerr << "Unknown error";
 }
 
 // Throw custom
-throw std::runtime_error("Mesaj de eroare");`
+throw std::runtime_error("Error message");`
   },
   {
-    title: 'Gestionarea Memoriei',
-    description: 'Control direct asupra resurselor sistemului cu RAII și Smart Pointers.',
+    title: 'Memory Management',
+    description: 'Direct control over system resources with RAII and Smart Pointers.',
     icon: Zap,
     code: `#include <memory>
 
-// Smart Pointer - eliberare automata
+// Smart Pointer - automatic cleanup
 auto ptr = std::make_unique<Data>();
 
 // Shared Pointer
@@ -238,31 +238,31 @@ auto shared = std::make_shared<int>(42);
 
 // Raw pointer - manual
 int* raw = new int[100];
-delete[] raw;  // Nu uita!
+delete[] raw;  // Don't forget!
 
-// RAII cu clasa
+// RAII with class
 class Resource {
 public:
     ~Resource() { cleanup(); }
 };`
   },
   {
-    title: 'I/O cu Fișiere',
-    description: 'Citire și scriere din/in fișiere pentru persistența datelor.',
+    title: 'File I/O',
+    description: 'Reading and writing from/to files for data persistence.',
     icon: FileCode,
     code: `#include <fstream>
 
-// Scriere in fisier
-std::ofstream fout("date.txt");
-fout << "Nume: Ana" << std::endl;
-fout << "Varsta: 25" << std::endl;
+// Write to file
+std::ofstream fout("data.txt");
+fout << "Name: Alice" << std::endl;
+fout << "Age: 25" << std::endl;
 fout.close();
 
-// Citire din fisier
-std::ifstream fin("date.txt");
-std::string linie;
-while (std::getline(fin, linie)) {
-    std::cout << linie << std::endl;
+// Read from file
+std::ifstream fin("data.txt");
+std::string line;
+while (std::getline(fin, line)) {
+    std::cout << line << std::endl;
 }
 fin.close();`
   }
@@ -274,8 +274,8 @@ export const Concepts = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-6">Concepte Fundamentale</h2>
-            <p className="text-white/60">Arhitectura limbajului este construită pe principiul eficienței maxime și al libertății totale pentru dezvoltator.</p>
+            <h2 className="text-4xl md:text-5xl font-black text-white mb-6">Fundamental Concepts</h2>
+            <p className="text-white/60">The language architecture is built on the principle of maximum efficiency and total freedom for the developer.</p>
           </div>
           <div className="text-cyan-400 font-mono text-sm">{"std::cout << \"Unleash Power\";"}</div>
         </div>

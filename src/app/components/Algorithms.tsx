@@ -4,32 +4,32 @@ import { Search, SortAsc, GitBranch, Terminal, Layers } from 'lucide-react';
 
 const algoItems = [
   {
-    title: 'Sortări Eficiente',
-    desc: 'QuickSort și MergeSort implementate în STL (std::sort) oferă complexitate O(n log n).',
+    title: 'Efficient Sorting',
+    desc: 'QuickSort and MergeSort implemented in STL (std::sort) provide O(n log n) complexity.',
     icon: SortAsc,
     color: 'from-blue-500/20 to-cyan-500/20'
   },
   {
-    title: 'Căutare Binară',
-    desc: 'std::lower_bound și std::upper_bound pentru căutări ultra-rapide în date sortate.',
+    title: 'Binary Search',
+    desc: 'std::lower_bound and std::upper_bound for ultra-fast searches in sorted data.',
     icon: Search,
     color: 'from-purple-500/20 to-pink-500/20'
   },
   {
-    title: 'Algoritmi pe Grafuri',
-    desc: 'Implementări performante pentru BFS, DFS și Dijkstra folosind liste de adiacență.',
+    title: 'Graph Algorithms',
+    desc: 'High-performance implementations for BFS, DFS and Dijkstra using adjacency lists.',
     icon: GitBranch,
     color: 'from-orange-500/20 to-red-500/20'
   },
   {
-    title: 'Programare Dinamică',
-    desc: 'Optimizarea problemelor complexe prin memoizare și abordări bottom-up.',
+    title: 'Dynamic Programming',
+    desc: 'Optimization of complex problems through memoization and bottom-up approaches.',
     icon: Terminal,
     color: 'from-green-500/20 to-emerald-500/20'
   },
   {
-    title: 'Structuri de Date',
-    desc: 'Vectori, stive, cozi și map-uri (hash tables) cu performanță garantată.',
+    title: 'Data Structures',
+    desc: 'Vectors, stacks, queues and maps (hash tables) with guaranteed performance.',
     icon: Layers,
     color: 'from-cyan-500/20 to-blue-500/20'
   }
@@ -39,7 +39,7 @@ export const Algorithms = () => {
   return (
     <section id="algorithms" className="py-24 bg-[#030303]">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-black text-white mb-16 text-center">Algoritmi & Structuri</h2>
+        <h2 className="text-4xl font-black text-white mb-16 text-center">Algorithms & Data Structures</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {algoItems.map((item, i) => (

@@ -6,11 +6,11 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const navLinks = [
-    { name: 'Istorie', href: '#history', icon: History },
-    { name: 'Concepte', href: '#concepts', icon: Cpu },
-    { name: 'Algoritmi', href: '#algorithms', icon: Brain },
-    { name: 'Industrie', href: '#industry', icon: Factory },
-    { name: 'Resurse', href: '#resources', icon: BookOpen },
+    { name: 'History', href: '#history', icon: History },
+    { name: 'Concepts', href: '#concepts', icon: Cpu },
+    { name: 'Algorithms', href: '#algorithms', icon: Brain },
+    { name: 'Industry', href: '#industry', icon: Factory },
+    { name: 'Resources', href: '#resources', icon: BookOpen },
   ];
 
   return (
@@ -41,7 +41,7 @@ export const Navbar = () => {
             whileTap={{ scale: 0.95 }}
             className="bg-cyan-500 hover:bg-cyan-400 text-black px-5 py-2 rounded-full text-sm font-bold transition-all shadow-lg shadow-cyan-500/20"
           >
-            Învață acum
+            Learn Now
           </motion.button>
         </div>
 

@@ -4,38 +4,38 @@ import { motion } from 'motion/react';
 const events = [
   {
     year: '1979',
-    title: 'Începutul',
-    description: 'Bjarne Stroustrup începe lucrul la "C with Classes" la AT&T Bell Labs.',
+    title: 'The Beginning',
+    description: 'Bjarne Stroustrup starts working on "C with Classes" at AT&T Bell Labs.',
     type: 'origin'
   },
   {
     year: '1983',
     title: 'C++',
-    description: 'Numele este schimbat oficial în C++. Se adaugă funcții virtuale, overloading și referințe.',
+    description: 'The name is officially changed to C++. Virtual functions, overloading, and references are added.',
     type: 'major'
   },
   {
     year: '1998',
     title: 'C++98',
-    description: 'Primul standard internațional oficial (ISO). Apare STL (Standard Template Library).',
+    description: 'The first official international standard (ISO). STL (Standard Template Library) is introduced.',
     type: 'standard'
   },
   {
     year: '2011',
     title: 'Modern C++ (C++11)',
-    description: 'O revoluție: auto, lambda expressions, move semantics și smart pointers.',
+    description: 'A revolution: auto, lambda expressions, move semantics and smart pointers.',
     type: 'standard'
   },
   {
     year: '2020',
     title: 'C++20',
-    description: 'Concepte, Module, Coroutine și Ranges. O nouă eră a eficienței.',
+    description: 'Concepts, Modules, Coroutines and Ranges. A new era of efficiency.',
     type: 'standard'
   },
   {
     year: '2023+',
-    title: 'Viitorul (C++23)',
-    description: 'Evoluția continuă cu focus pe simplitate și siguranță.',
+    title: 'The Future (C++23)',
+    description: 'Continuous evolution with a focus on simplicity and safety.',
     type: 'future'
   }
 ];
@@ -51,7 +51,7 @@ export const HistoryTimeline = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-black mb-6"
           >
-            Evoluția Performanței
+            The Evolution of Performance
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -60,7 +60,7 @@ export const HistoryTimeline = () => {
             transition={{ delay: 0.1 }}
             className="text-white/60 max-w-2xl mx-auto"
           >
-            De la un experiment în laboratoarele Bell până la limbajul care stă la baza tehnologiei moderne.
+            From an experiment in Bell Labs to the language that powers modern technology.
           </motion.p>
         </div>
 

@@ -87,10 +87,10 @@ export const Hero = () => {
             The Industry Standard
           </span>
           <h1 className="text-6xl md:text-8xl font-black text-white mb-8 tracking-tighter leading-none">
-            C++ — <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">Puterea</span> din spatele performanței
+            C++ — <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">The Power</span> Behind Performance
           </h1>
           <p className="text-xl text-white/60 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Limbajul care alimentează cele mai complexe sisteme din lume, de la motoare grafice AAA la explorarea spațială și sisteme de operare.
+            The language powering the world's most complex systems, from AAA game engines to space exploration and operating systems.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -100,7 +100,7 @@ export const Hero = () => {
               whileTap={{ scale: 0.95 }}
               className="bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all"
             >
-              Explorează limbajul
+              Explore the Language
             </motion.a>
             <motion.a
               href="#concepts"
@@ -108,7 +108,7 @@ export const Hero = () => {
               whileTap={{ scale: 0.95 }}
               className="px-10 py-4 rounded-full font-bold text-lg text-white border border-white/20 hover:bg-white/5 transition-all"
             >
-              Documentație
+              Documentation
             </motion.a>
           </div>
         </motion.div>

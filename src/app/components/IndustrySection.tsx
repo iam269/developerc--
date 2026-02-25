@@ -6,37 +6,37 @@ const industries = [
   {
     icon: Gamepad2,
     title: 'Game Development',
-    desc: 'Unreal Engine este scris în C++. Jocurile AAA se bazează pe controlul memoriei oferit de acest limbaj.',
+    desc: 'Unreal Engine is written in C++. AAA games rely on the memory control offered by this language.',
     examples: ['Unreal Engine', 'Unity (core)', 'Frostbite']
   },
   {
     icon: Monitor,
-    title: 'Sisteme de Operare',
-    desc: 'Windows, macOS și părți mari din Linux sunt scrise în C++ pentru viteză și acces direct la hardware.',
+    title: 'Operating Systems',
+    desc: 'Windows, macOS and large parts of Linux are written in C++ for speed and direct hardware access.',
     examples: ['Windows Kernel', 'macOS', 'Android Runtime']
   },
   {
     icon: Car,
     title: 'Auto & Embedded',
-    desc: 'Sistemele de navigație, controlul motorului și software-ul pentru mașini autonome folosesc C++.',
+    desc: 'Navigation systems, engine control and software for autonomous vehicles use C++.',
     examples: ['Tesla', 'SpaceX', 'BMW']
   },
   {
     icon: Landmark,
-    title: 'Sisteme Financiare',
-    desc: 'High-Frequency Trading necesită latență de ordinul microsecundelor, lucru posibil doar cu C++.',
+    title: 'Financial Systems',
+    desc: 'High-Frequency Trading requires microsecond-level latency, possible only with C++.',
     examples: ['Bloomberg', 'Morgan Stanley', 'HFT Firms']
   },
   {
     icon: Bot,
-    title: 'Robotică & AI',
-    desc: 'Biblioteca TensorFlow și framework-urile de robotică (ROS) au nucleul optimizat în C++.',
+    title: 'Robotics & AI',
+    desc: 'The TensorFlow library and robotics frameworks (ROS) have optimized cores in C++.',
     examples: ['TensorFlow', 'NASA Rover', 'Boston Dynamics']
   },
   {
     icon: Palette,
-    title: 'Randare Grafică',
-    desc: 'Adobe Photoshop, Illustrator și Maya folosesc C++ pentru a procesa miliarde de pixeli în timp real.',
+    title: 'Graphics Rendering',
+    desc: 'Adobe Photoshop, Illustrator and Maya use C++ to process billions of pixels in real-time.',
     examples: ['Adobe Creative Cloud', 'Maya', 'Blender']
   }
 ];
@@ -46,9 +46,9 @@ export const IndustrySection = () => {
     <section id="industry" className="py-24 bg-[#080808]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-4xl font-black text-white mb-6">Unde domină C++?</h2>
+          <h2 className="text-4xl font-black text-white mb-6">Where C++ Dominates</h2>
           <p className="text-white/60 max-w-2xl mx-auto">
-            Limbajul este prezent peste tot unde performanța nu este opțională, ci obligatorie.
+            The language is present everywhere where performance is not optional, but mandatory.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export const IndustrySection = () => {
         </div>
 
         <div className="mt-24 pt-12 border-t border-white/5">
-          <p className="text-center text-white/20 text-sm mb-12 uppercase tracking-[0.2em]">Companii care folosesc C++</p>
+          <p className="text-center text-white/20 text-sm mb-12 uppercase tracking-[0.2em]">Companies using C++</p>
           <div className="flex flex-wrap justify-center gap-12 md:gap-24 opacity-30 grayscale hover:grayscale-0 transition-all">
              <span className="text-2xl font-black text-white">Microsoft</span>
              <span className="text-2xl font-black text-white">Google</span>
