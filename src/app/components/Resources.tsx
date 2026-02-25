@@ -5,27 +5,51 @@ import { ExternalLink, Book, Globe, Users } from 'lucide-react';
 const resources = [
   {
     title: 'Documentație Oficială',
-    desc: 'cppreference.com este sursa supremă pentru standardul C++.',
+    desc: 'cppreference.com este sursa supremă pentru standardul C++ - tot ce ai nevoie despre sintaxă, funcții și biblioteci.',
     icon: Globe,
-    link: 'https://cppreference.com'
+    link: 'https://en.cppreference.com'
   },
   {
-    title: 'Cărți Recomandate',
-    desc: '"The C++ Programming Language" de Bjarne Stroustrup și seria "Effective C++".',
+    title: 'Tutoriale Interactive',
+    desc: 'LearnCpp.com - tutoriale gratuite pentru a învăța C++ de la zero, cu exemple practice.',
     icon: Book,
-    link: '#'
+    link: 'https://www.learncpp.com'
   },
   {
     title: 'Platforme de Exerciții',
-    desc: 'LeetCode, HackerRank și Exercism pentru a-ți exersa logica.',
+    desc: 'LeetCode și HackerRank pentru a-ți exersa logica și a pregăti interviuri tehnice.',
     icon: ExternalLink,
-    link: '#'
+    link: 'https://leetcode.com'
   },
   {
     title: 'Comunități Online',
-    desc: 'Subreddit-ul r/cpp și comunitatea Stack Overflow.',
+    desc: 'r/cpp - subreddit-ul oficial pentru dezvoltatori C++ și întrebări despre limbaj.',
     icon: Users,
-    link: '#'
+    link: 'https://reddit.com/r/cpp'
+  },
+  {
+    title: 'Standardul C++',
+    desc: 'ISO C++ Foundation - documentație oficială și noutăți despre standardele C++.',
+    icon: Globe,
+    link: 'https://isocpp.org'
+  },
+  {
+    title: 'Cărți Recomandate',
+    desc: '"The C++ Programming Language" de Bjarne Stroustrup - autorul limbajului.',
+    icon: Book,
+    link: 'https://www.stroustrup.com/programming.html'
+  },
+  {
+    title: 'STL Documentation',
+    desc: 'Documentație completă pentru Standard Template Library - containere, algoritmi.',
+    icon: ExternalLink,
+    link: 'https://cplusplus.com/reference/'
+  },
+  {
+    title: 'Best Practices',
+    desc: 'Effective Modern C++ - ghid pentru programare modernă în C++ (C++11/14/17/20).',
+    icon: Book,
+    link: 'https://www.oreilly.com/library/view/effective-modern-c/9781491978385/'
   }
 ];
 
