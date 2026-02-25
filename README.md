@@ -1,6 +1,12 @@
 # C++ Mastery
 
+![C++ Mastery Screenshot](c-.png)
+
 A comprehensive, interactive educational platform for learning C++ programming, featuring code examples, tutorials, and real-world industry applications.
+
+## 🚀 Live Demo
+
+**View the website live**: [https://developerc.vercel.app/](https://developerc.vercel.app/)
 
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
