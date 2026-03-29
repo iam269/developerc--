@@ -89,6 +89,37 @@ export const Footer = () => {
   return (
     <footer className="py-12 bg-[#030303] border-t border-white/5 text-white/40">
       <div className="max-w-7xl mx-auto px-6">
+        {/* Developer Section */}
+        <div className="mb-12 pb-12 border-b border-white/5">
+          <h3 className="text-lg font-bold text-white mb-6">About the Developer</h3>
+          <div className="flex flex-col md:flex-row gap-8 items-start">
+            <div className="flex items-center gap-4">
+              <img 
+                src="/iam269.png" 
+                alt="Ioniță Aurel Mihai" 
+                className="w-16 h-16 rounded-2xl object-cover border border-cyan-500/20" 
+              />
+              <div>
+                <p className="text-white font-bold text-lg">Ioniță Aurel Mihai</p>
+                <p className="text-white/40 text-sm">Full-Stack Developer</p>
+              </div>
+            </div>
+            <div className="flex-1">
+              <p className="text-white/60 leading-relaxed max-w-xl">
+                Passionate about creating high-performance web applications and exploring the depths of C++ programming. 
+                This project showcases the power and elegance of modern C++ development, from game engines to system programming.
+              </p>
+            </div>
+          </div>
+          <div className="mt-6 flex gap-4">
+            <a href="https://github.com/iam269" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg bg-white/5 border border-white/10 hover:border-cyan-500/30 hover:text-cyan-400 transition-all text-sm font-medium">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ionita-aurel-mihai-20648536a/" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg bg-white/5 border border-white/10 hover:border-cyan-500/30 hover:text-cyan-400 transition-all text-sm font-medium">
+              LinkedIn
+            </a>
+          </div>
+        </div>
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
           <div className="flex items-center gap-2 text-xl font-bold text-white">
             <span className="text-cyan-400">C++</span> Mastery
